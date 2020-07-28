@@ -14,7 +14,7 @@ RUN set -ex && \
     apk add --no-cache wget mysql-client sed && \
     \
     wget -qO /tmp/gtrackcar.zip https://api.giahungtrieu.net/gtrackcar-other-4.0.zip && \
-    unzip -qo /tmp/gtrackcar.zip -d /opt/traccar && \
+    unzip -qo /tmp/gtrackcar.zip -d /opt/gtrackcar && \
     wget -qO /opt/gtrackcar/gtrackcar-web.war https://github.com/vitalidze/traccar-web/releases/download/$TRACCAR_WEB_VERSION/traccar-web.war && \
     rm /tmp/gtrackcar.zip && \
     \
